@@ -25,8 +25,8 @@ public class CoolDownAPI {
      * Checks if the object has a cool down
      */
     public static boolean hasCooldown(String key) {
-        long cooldown = cooldowns.get(key);
-        if(cooldown < 0){
+        Long cooldown = cooldowns.get(key);
+        if(cooldown == null || cooldown - System.currentTimeMillis() < 0) {
             cooldowns.remove(key);
             return false;
         }
@@ -50,7 +50,8 @@ public class CoolDownAPI {
      * @param key
      * @return timestamp at which cooldown ends.
      */
-    public static long getCooldown(String key) {
+    @Nullable
+    public static Long getCooldown(String key) {
         return cooldowns.get(key);
     }
 }
