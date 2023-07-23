@@ -3,6 +3,9 @@
 # ActionBarAPI
 ActionBarAPI static methods. Should be self explanatory. <br/> The MutableBoolean method allows for action bar messages to be sent while the MutableBoolean passed in remains true.
 
+# ConfigUpdater
+TO BE REMOVED. Not useful anymore
+
 # Cloud Command Framework
 https://github.com/Incendo/cloud
 
