@@ -1,4 +1,4 @@
-package xyz.scyllasrock.ScyUtility.data;
+package com.tcc.SkelUtil.data;
 
 import com.google.common.base.Preconditions;
 import org.bukkit.configuration.ConfigurationSection;

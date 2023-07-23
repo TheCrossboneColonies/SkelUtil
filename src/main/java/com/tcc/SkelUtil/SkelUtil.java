@@ -1,14 +1,14 @@
-package xyz.scyllasrock.ScyUtility;
+package com.tcc.SkelUtil;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import xyz.scyllasrock.ScyUtility.objects.gui.GUIListener;
+import com.tcc.SkelUtil.objects.gui.GUIListener;
 
-public class Main extends JavaPlugin {
+public class SkelUtil extends JavaPlugin {
 	
-	private static Main instance;
+	private static SkelUtil instance;
 	
 	
 	@Override
@@ -17,7 +17,7 @@ public class Main extends JavaPlugin {
 		instance = this;
 		
 		Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',
-				"&aScyUtility enabled successfully!"));
+				"&aSkelUtil enabled successfully!"));
 		
 		//Register listeners
 		Bukkit.getPluginManager().registerEvents(new GUIListener(), this);
@@ -28,7 +28,7 @@ public class Main extends JavaPlugin {
 		
 	}
 
-	public static Main getInstance() {
+	public static SkelUtil getInstance() {
 		return instance;
 	}
 

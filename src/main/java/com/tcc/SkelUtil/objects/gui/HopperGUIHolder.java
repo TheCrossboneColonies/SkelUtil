@@ -1,4 +1,4 @@
-package xyz.scyllasrock.ScyUtility.objects.gui;
+package com.tcc.SkelUtil.objects.gui;
 
 import java.util.function.BiConsumer;
 
@@ -18,8 +18,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class DropperGUIHolder implements MenuHolder<DropperGUI> {
-    private final DropperGUI gui;
+public class HopperGUIHolder implements MenuHolder<HopperGUI> {
+
+    private final HopperGUI gui;
     private Inventory inventory;
 
     @Override
@@ -62,12 +63,7 @@ public class DropperGUIHolder implements MenuHolder<DropperGUI> {
     }
 
     @Override
-    public @Nonnull DropperGUI getMenu() {
+    public @Nonnull HopperGUI getMenu() {
         return gui;
-    }
-
-    @Override
-    public Inventory getInventory() {
-        return inventory;
     }
 }

@@ -1,4 +1,4 @@
-package xyz.scyllasrock.ScyUtility.objects.gui;
+package com.tcc.SkelUtil.objects.gui;
 
 import java.util.function.BiConsumer;
 import java.util.function.Function;

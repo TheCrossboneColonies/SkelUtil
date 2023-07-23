@@ -1,4 +1,4 @@
-package xyz.scyllasrock.ScyUtility.objects.gui;
+package com.tcc.SkelUtil.objects.gui;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

@@ -1,4 +1,4 @@
-package xyz.scyllasrock.ScyUtility.data;
+package com.tcc.SkelUtil.data;
 
 import org.bukkit.configuration.file.FileConfiguration;
 

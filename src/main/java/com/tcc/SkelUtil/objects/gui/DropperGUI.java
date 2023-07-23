@@ -1,4 +1,4 @@
-package xyz.scyllasrock.ScyUtility.objects.gui;
+package com.tcc.SkelUtil.objects.gui;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,8 +24,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class HopperGUI implements MenuBase {
-
+public class DropperGUI implements MenuBase {
     private final ArrayList<MenuItem> items;
     private final HashMap<Player, Inventory> activeInventories;
     // Are people allowed to take items from the GUI?
@@ -42,18 +41,18 @@ public class HopperGUI implements MenuBase {
      * @apiNote The title supports color codes automatically!
      * @apiNote By default, allowTakeItems is false.
      */
-    public HopperGUI(@Nonnull String title) {
+    public DropperGUI(@Nonnull String title) {
         this(title, false);
     }
 
     /**
-     * Main constructor for the GUI
+     * SkelUtil constructor for the GUI
      *
      * @param title          Title
      * @param allowTakeItems Allowed taking items from the menu?
      * @apiNote The title supports color codes automatically!
      */
-    public HopperGUI(@Nonnull String title, boolean allowTakeItems) {
+    public DropperGUI(@Nonnull String title, boolean allowTakeItems) {
         this.title = title;
         this.allowTakeItems = allowTakeItems;
 
@@ -67,8 +66,8 @@ public class HopperGUI implements MenuBase {
      * @param player Player
      */
     public void open(@Nonnull Player player) {
-        HopperGUIHolder holder = new HopperGUIHolder(this);
-        Inventory inv = Bukkit.createInventory(holder, InventoryType.HOPPER, ChatColor.translateAlternateColorCodes('&', title));
+        DropperGUIHolder holder = new DropperGUIHolder(this);
+        Inventory inv = Bukkit.createInventory(holder, InventoryType.DROPPER, ChatColor.translateAlternateColorCodes('&', title));
 
         player.openInventory(inv);
         activeInventories.put(player, inv);
@@ -185,6 +184,4 @@ public class HopperGUI implements MenuBase {
             }
         });
     }
-
-
 }

@@ -1,4 +1,4 @@
-package xyz.scyllasrock.ScyUtility.api;
+package com.tcc.SkelUtil.api;
 
 import java.nio.ByteBuffer;
 import java.util.UUID;
@@ -13,7 +13,7 @@ import org.bukkit.Location;
  * @author kylew
  *
  */
-public class ScyUtil {
+public class SkelUtil {
 
 
 	/**

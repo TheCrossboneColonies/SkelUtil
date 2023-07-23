@@ -1,4 +1,4 @@
-package xyz.scyllasrock.ScyUtility.api;
+package com.tcc.SkelUtil.api;
 
 public enum TaskPriority {
 	

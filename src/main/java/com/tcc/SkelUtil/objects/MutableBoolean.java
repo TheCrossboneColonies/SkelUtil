@@ -1,4 +1,4 @@
-package xyz.scyllasrock.ScyUtility.objects;
+package com.tcc.SkelUtil.objects;
 
 public class MutableBoolean {
 

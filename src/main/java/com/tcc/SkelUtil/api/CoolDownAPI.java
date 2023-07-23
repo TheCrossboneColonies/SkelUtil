@@ -1,4 +1,4 @@
-package xyz.scyllasrock.ScyUtility.api;
+package com.tcc.SkelUtil.api;
 
 import javax.annotation.Nullable;
 import java.util.HashMap;

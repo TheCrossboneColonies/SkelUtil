@@ -1,4 +1,4 @@
-package xyz.scyllasrock.ScyUtility.objects.gui;
+package com.tcc.SkelUtil.objects.gui;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -55,7 +55,7 @@ public class GUI implements MenuBase {
     }
 
     /**
-     * Main constructor for the GUI
+     * SkelUtil constructor for the GUI
      *
      * @param title          Title
      * @param rows           Number of rows
