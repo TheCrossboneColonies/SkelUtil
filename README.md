@@ -1,4 +1,4 @@
-# ScyUtility Wiki
+# SkelUtil Wiki
 
 # ActionBarAPI
 ActionBarAPI static methods. Should be self explanatory. <br/> The MutableBoolean method allows for action bar messages to be sent while the MutableBoolean passed in remains true.
