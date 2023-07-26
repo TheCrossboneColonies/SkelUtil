@@ -1,5 +1,34 @@
 # SkelUtil Wiki
 
+# Installation
+
+## Maven
+```xml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
+```
+```xml
+<dependency>
+    <groupId>com.github.TheCrossboneColonies</groupId>
+    <artifactId>SkelUtil</artifactId>
+    <version>v1.0</version>
+</dependency>
+```
+## Gradle
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+```
+```groovy
+dependencies {
+    implementation 'com.github.TheCrossboneColonies:SkelUtil:v1.0'
+}
+```
+
+
 # ActionBarAPI
 ActionBarAPI static methods. Should be self explanatory. <br/> The MutableBoolean method allows for action bar messages to be sent while the MutableBoolean passed in remains true.
 
