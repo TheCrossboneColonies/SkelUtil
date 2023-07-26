@@ -6,7 +6,7 @@
 
     <groupId>com.tcc</groupId>
     <artifactId>SkelUtil</artifactId>
-    <version>1.1</version>
+    <version>1.0</version>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
@@ -43,7 +43,7 @@
 <!--                                    <include>com.zaxxer:*</include>-->
                                 </includes>
                             </artifactSet>
-                            <outputFile>C:\Users\kylew\Desktop\19testing\plugins\SkelUtil.jar</outputFile>
+                            <outputFile>C:\Users\kylew\Desktop\19testing\plugins\SkelUtil-v${project.version}.jar</outputFile>
                         </configuration>
                     </execution>
                 </executions>
