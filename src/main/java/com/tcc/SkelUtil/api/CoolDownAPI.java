@@ -17,7 +17,7 @@ public class CoolDownAPI {
      * @param key : key of object to give cool down
      * @param milliseconds : time of cool down
      */
-    public static void addCooldown(String key, long milliseconds) {
+    public static void setCooldown(String key, long milliseconds) {
         cooldowns.put(key, System.currentTimeMillis() + milliseconds);
     }
     /**
@@ -45,13 +45,19 @@ public class CoolDownAPI {
     }
 
 
+
     /**
+     * Gets the remaining time for the cooldown in milliseconds.
      *
-     * @param key
-     * @return timestamp at which cooldown ends.
+     * @param key The cooldown key.
+     * @return The remaining time for the cooldown in milliseconds, or 0 if the cooldown is not active.
      */
-    @Nullable
-    public static Long getCooldown(String key) {
-        return cooldowns.get(key);
+    public long getRemainingTime(String key) {
+        if (cooldowns.containsKey(key)) {
+            long remainingTime = cooldowns.get(key) - System.currentTimeMillis();
+            return Math.max(remainingTime, 0);
+        }
+        return 0;
     }
+
 }
