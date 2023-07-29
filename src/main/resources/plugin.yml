@@ -2,5 +2,5 @@ main: com.tcc.SkelUtil.SkelUtil
 name: SkelUtil
 version: ${project.version}
 author: kwilk
-api-version: 1.13
+api-version: 1.14
 description: Does nothing on its own. Library for other plugins
