@@ -17,6 +17,7 @@
     </properties>
 
     <build>
+        <finalName>${project.name}-v${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -27,27 +28,27 @@
                     <target>16</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.4</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                        <configuration>
-                            <artifactSet>
-                                <includes>
-<!--                                    <include>com.zaxxer:*</include>-->
-                                </includes>
-                            </artifactSet>
-                            <outputFile>C:\Users\kylew\Desktop\19testing\plugins\SkelUtil-v${project.version}.jar</outputFile>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-shade-plugin</artifactId>-->
+<!--                <version>3.2.4</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>package</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>shade</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <artifactSet>-->
+<!--                                <includes>-->
+<!--&lt;!&ndash;                                    <include>com.zaxxer:*</include>&ndash;&gt;-->
+<!--                                </includes>-->
+<!--                            </artifactSet>-->
+<!--                            <outputFile>C:\Users\kylew\Desktop\19testing\plugins\SkelUtil-v${project.version}.jar</outputFile>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
         </plugins>
         <resources>
             <resource>
