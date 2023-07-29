@@ -52,7 +52,7 @@ public class CoolDownAPI {
      * @param key The cooldown key.
      * @return The remaining time for the cooldown in milliseconds, or 0 if the cooldown is not active.
      */
-    public long getRemainingTime(String key) {
+    public static long getRemainingTime(String key) {
         if (cooldowns.containsKey(key)) {
             long remainingTime = cooldowns.get(key) - System.currentTimeMillis();
             return Math.max(remainingTime, 0);
